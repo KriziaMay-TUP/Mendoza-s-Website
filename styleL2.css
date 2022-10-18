@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu
+{
+    background-color: rgb(141, 198, 252);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 5%;
+}
+.menu ul
+{
+    list-style: none;
+    display: flex;
+}
+.menu ul li
+{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu ul li a
+{
+color: white;
+text-decoration: none;
+font-size: 20px;
+transition: all;
+}
+.menu ul li a:hover
+{
+ color: blue;
+}
+.fas 
+{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.dropdown 
+{
+    display: none;
+    z-index: 5;
+}
+  
+  .menu ul li:hover .dropdown
+  {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:  rgb(141, 198, 252);
+  }
+  
+  .menu ul li:hover .dropdown ul 
+  {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu ul li:hover .dropdown ul li
+   {
+    width: 150px;
+    padding: 10px;
+  }
+  .hero 
+  {
+    height: calc(100vh - 80px);
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero .overlay
+  {
+    background-image: linear-gradient(to top right, blue, pink);
+    width: 100%;
+    height: 90.9%;
+    opacity: .4;
+    position: absolute;
+  }
+  .hero .intro p
+  {
+    position: absolute;
+    margin: 5% 35%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    color: rgb(51, 241, 255);
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.233) rgba(17, 3, 3, 0.055));
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 20px 32px 0 rgba(0,0,0,0.37);
+  }
+  .hero .intro p1
+  {
+    position: absolute;
+    margin: 13% 20%;
+    text-align: justify;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+  }
+  .hero .iframe-container
+  {
+    text-align:center;
+    position: relative;
+    width: 100%;
+    padding-top: 25%; 
+    height: 0;
+    z-index: 1;
+  }
+  .hero .iframe-container iframe
+  {
+    box-shadow: 0 0 30px rgba(91, 255, 241, 0.692);
+  }
